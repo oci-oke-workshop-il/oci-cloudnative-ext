@@ -26,7 +26,7 @@ COPY go.sum .
 
 # Build Catalogue service
 RUN GOARCH=${TARGETARCH:-amd64} GOOS=${TARGETOS:-linux} \
-  go build -a \
+  go buid -a \
   -o /catalogue mushop/catalogue/cmd/cataloguesvc
 
 ##### Catalogue Service Image with Oracle Instant Client Basic Lite
