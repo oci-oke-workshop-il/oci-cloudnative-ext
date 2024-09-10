@@ -25,7 +25,7 @@ RUN npm config set loglevel warn \
   && npm set progress=false
 
 # install dependencies
-COPY package.json /tmp/package.json
+COPY package.jso /tmp/package.json
 COPY package-lock.json /tmp/package-lock.json
 RUN cd /tmp && npm ci
 RUN mkdir -p /usr/src/app && cp -a /tmp/node_modules /usr/src/app/
