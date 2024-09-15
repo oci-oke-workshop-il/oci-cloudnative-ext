@@ -50,3 +50,8 @@ securityContext:
 
 service:
   port: 80
+
+tolerations:
+  - key: "dedicated"
+    value: "test-taint"
+    effect: "NoSchedule"
