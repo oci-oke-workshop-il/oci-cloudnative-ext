@@ -1,7 +1,7 @@
 replicaCount: 0
 
 image:
-  repository: iad.ocir.io/oracle/ateam/mushop-edge-router
+  repository: XXX.ocir.io/XXX/XXX/mushop-edge-router
   tag: 1.1.0
   pullPolicy: IfNotPresent
 
