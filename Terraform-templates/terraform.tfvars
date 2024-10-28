@@ -44,7 +44,7 @@ adb_license_model        = "BRING_YOUR_OWN_LICENSE"
 adb_whitelisted_ips      = ["203.0.113.0/24", "198.51.100.0/24"]
 adb_customer_contact_email = "admin@example.com"
 
-
-vault_name             = "MyOCIVault"
-vault_key_name         = "MyVaultKey"
-oke_dynamic_group_name = "OKENodesDynamicGroup"
+tenancy_ocid          = "ocid1.tenancy.oc1..aaaaaaaa5eerf7ajzwvn4p4h7has7dg7fziwmnyyorhqo3xv3ob5lpxqczea"
+vault_name            = "MyOKEVault"
+vault_key_name        = "MyVaultKey"
+oke_dynamic_group_name = "OKENodesGroup1j"

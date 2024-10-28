@@ -23,3 +23,9 @@ variable "oke_nodes_dynamic_group_name" {
   type        = string
   description = "The name of the dynamic group for OKE nodes"
 }
+
+variable "policy_name" {
+  type        = string
+  description = "The name of the policy"
+}
+

@@ -59,7 +59,7 @@ resource "oci_containerengine_node_pool" "oke_node_pool" {
   initial_node_labels {
     key   = "name"
     value = var.cluster_name
-  }
+  } 
 
 }
 
@@ -73,10 +73,18 @@ resource "local_file" "kubeconfig" {
 }
 
 
+#resource "oci_identity_dynamic_group" "oke_nodes_dynamic_group" {
+##  count          = var.create_dynamic_group ? 1 : 0
+##  compartment_id = var.compartment_id
+##  name           = var.dynamic_group_name
+##  description    = "Dynamic group for OKE nodes"
+##  matching_rule  = "ALL {instance.compartment.id = '${var.compartment_id}', instance.compartment.type = 'cluster'}"
+#}
+
 resource "oci_identity_dynamic_group" "oke_nodes_dynamic_group" {
   count          = var.create_dynamic_group ? 1 : 0
-  compartment_id = "ocid1.tenancy.oc1..aaaaaaaa5eerf7ajzwvn4p4h7has7dg7fziwmnyyorhqo3xv3ob5lpxqczea"
+  compartment_id = var.compartment_id
   name           = var.dynamic_group_name
   description    = "Dynamic group for OKE nodes"
-  matching_rule  = "ANY {instance.compartment.id = '${var.compartment_id}'}"
+  matching_rule  = "ALL {resource.type = 'instance', instance.compartment.id = '${var.compartment_id}', instance.lifecycleState = 'RUNNING'}"
 }

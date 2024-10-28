@@ -14,15 +14,14 @@ resource "oci_kms_key" "key" {
   management_endpoint = oci_kms_vault.vault.management_endpoint
 }
 
-# IAM policy to allow OKE to access the vault
 resource "oci_identity_policy" "oke_vault_policy" {
-  name           = "OKEVaultAccess"
-  description    = "Allow OKE to access the vault"
   compartment_id = var.compartment_id
+  description    = "Allow OKE cluster access to secrets in vault"
+  name           = var.policy_name
 
   statements = [
-    "Allow dynamic-group ${var.oke_nodes_dynamic_group_name} to use secret-family in compartment id ${var.compartment_id}",
-    "Allow dynamic-group ${var.oke_nodes_dynamic_group_name} to use vaults in compartment id ${var.compartment_id}",
-    "Allow dynamic-group ${var.oke_nodes_dynamic_group_name} to use keys in compartment id ${var.compartment_id}"
+    "Allow dynamic-group ${var.oke_nodes_dynamic_group_name} to read secret-bundles in compartment id ${var.compartment_id}",
+    "Allow dynamic-group ${var.oke_nodes_dynamic_group_name} to use keys in compartment id ${var.compartment_id}",
+    "Allow dynamic-group ${var.oke_nodes_dynamic_group_name} to manage secret-family in compartment id ${var.compartment_id}"
   ]
 }

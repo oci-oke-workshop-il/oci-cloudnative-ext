@@ -173,3 +173,8 @@ variable "oke_dynamic_group_name" {
   type        = string
   description = "The name of the dynamic group for OKE nodes"
 }
+
+variable "tenancy_ocid" {
+  type        = string
+  description = "The name of the tenancy_ocid"
+}

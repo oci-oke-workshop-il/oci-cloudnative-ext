@@ -109,12 +109,12 @@ variable "node_pool_image_id" {
 variable "create_dynamic_group" {
   type        = bool
   description = "Whether to create a dynamic group for OKE nodes"
-  default     = false
+  default     = true
 }
 
 variable "dynamic_group_name" {
   type        = string
   description = "The name of the dynamic group for OKE nodes"
-  default     = ""
+  default     = "Zubi"
 }
 

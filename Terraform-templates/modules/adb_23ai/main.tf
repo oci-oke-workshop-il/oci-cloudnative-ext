@@ -11,7 +11,7 @@ resource "oci_database_autonomous_database" "adb_23ai" {
   are_primary_whitelisted_ips_used = var.are_primary_whitelisted_ips_used
   cpu_core_count                   = var.cpu_core_count
   data_storage_size_in_tbs         = var.data_storage_size_in_tbs
-  db_version                       = "23ai"
+ # db_version                       = "23ai"
   is_free_tier                     = var.is_free_tier
   license_model                    = var.license_model
   is_auto_scaling_enabled          = var.is_auto_scaling_enabled

@@ -38,28 +38,30 @@ module "oke" {
   # services_cidr              = "10.96.0.0/16"
 }
 
-#module "adb_23ai" {
- # source = "./modules/adb_23ai"
+module "adb_23ai" {
+  source = "./modules/adb_23ai"
 
-  #compartment_id           = var.compartment_id
-  #db_name                  = var.adb_name
-  #display_name             = var.adb_display_name
-  #admin_password           = var.adb_admin_password
-  #cpu_core_count           = var.adb_cpu_core_count
-  #data_storage_size_in_tbs = var.adb_data_storage_size_in_tbs
+  compartment_id           = var.compartment_id
+  db_name                  = var.adb_name
+  display_name             = var.adb_display_name
+  admin_password           = var.adb_admin_password
+  cpu_core_count           = var.adb_cpu_core_count
+  data_storage_size_in_tbs = var.adb_data_storage_size_in_tbs
   #db_version               = var.adb_db_version
-  #is_free_tier             = var.adb_is_free_tier
-  #license_model            = var.adb_license_model
-  #whitelisted_ips          = var.adb_whitelisted_ips
-  #customer_contact_email   = var.adb_customer_contact_email
-  #defined_tags             = var.adb_defined_tags
-#}
+  is_free_tier             = var.adb_is_free_tier
+  license_model            = var.adb_license_model
+  whitelisted_ips          = var.adb_whitelisted_ips
+  customer_contact_email   = var.adb_customer_contact_email
+  defined_tags             = var.adb_defined_tags
+}
 
 module "vault" {
   source = "./modules/vault"
 
-  compartment_id                 = var.compartment_id
-  vault_name                     = var.vault_name
-  key_name                       = var.vault_key_name
-  oke_nodes_dynamic_group_name   = module.oke.dynamic_group_name
+  compartment_id               = var.compartment_id
+  vault_name                   = var.vault_name
+  key_name                     = var.vault_key_name
+  oke_nodes_dynamic_group_name = var.oke_dynamic_group_name
+  policy_name                  = "${var.vault_name}-policy"
+ # compartment_id               = var.tenancy_ocid 
 }
