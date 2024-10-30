@@ -115,6 +115,6 @@ variable "create_dynamic_group" {
 variable "dynamic_group_name" {
   type        = string
   description = "The name of the dynamic group for OKE nodes"
-  default     = "Zubi"
+  default     = "OKE-NODE-DYNAMIC-NODE-GROUP"
 }
 
