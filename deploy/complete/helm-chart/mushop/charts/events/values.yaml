@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: XXX.ocir.io/XXX/XXX/mushop-events
+  repository: iad.ocir.io/oracle/ateam/mushop-events
   tag: 0.0.2
   pullPolicy: IfNotPresent
 

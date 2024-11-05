@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: XXX.ocir.io/XXX/XXX/mushop-fulfillment
+  repository: iad.ocir.io/oracle/ateam/mushop-fulfillment
   tag: 1.1.0
   pullPolicy: IfNotPresent
 

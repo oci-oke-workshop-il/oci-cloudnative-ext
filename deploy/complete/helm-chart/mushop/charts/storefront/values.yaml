@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: XXX.ocir.io/XXX/XXX/mushop-storefront
+  repository: 
   tag: 2.3
   pullPolicy: Always
 
