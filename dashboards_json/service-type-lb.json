@@ -1,7 +1,7 @@
 {
     "dashboards": [
       {
-        "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+        "compartmentId": "${compartment_ocid}",
         "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
         "dashboardId": "ocid1.managementdashboard.oc1..aaaaaaaa7tmp6wlxgpkjavvyeuvdn3eevm32pmski2z4m22w3jxhtq32h6rq",
         "dataConfig": [],
@@ -149,7 +149,7 @@
         "providerVersion": "3.0.0",
         "savedSearches": [
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "Count of load balancers being monitored",
@@ -358,7 +358,7 @@
             "widgetVM": "jet-modules/dashboards/widgets/lxSavedSearchWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "Service count",
@@ -582,7 +582,7 @@
             "widgetVM": "jet-modules/dashboards/widgets/lxSavedSearchWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "",
@@ -864,7 +864,7 @@
             "widgetVM": "jet-modules/dashboards/widgets/lxSavedSearchWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "Problem labels by lb name",
@@ -1073,7 +1073,7 @@
             "widgetVM": "jet-modules/dashboards/widgets/lxSavedSearchWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [
               {
@@ -1182,7 +1182,7 @@
             "widgetVM": "visualizations/chartWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [
               {
@@ -1291,7 +1291,7 @@
             "widgetVM": "visualizations/chartWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "",
@@ -1523,7 +1523,7 @@
             "widgetVM": "jet-modules/dashboards/widgets/lxSavedSearchWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "",
@@ -1807,7 +1807,7 @@
             "widgetVM": "jet-modules/dashboards/widgets/lxSavedSearchWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [
               {
@@ -1875,7 +1875,7 @@
             "widgetVM": "visualizations/chartWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "OKE Nodes",
@@ -1990,7 +1990,7 @@
             "widgetVM": "jet-modules/dashboards/widgets/lxSavedSearchWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "",
@@ -2263,7 +2263,7 @@
             "widgetVM": "jet-modules/dashboards/widgets/lxSavedSearchWidget"
           },
           {
-            "compartmentId": "ocid1.tenancy.oc1..aaaaaaaa5naxl5kdhgxyhn2jrk7fcz4spdez4umysyxnq626kf2qlcvuhyxa",
+            "compartmentId": "${compartment_ocid}",
             "createdBy": "ocid1.saml2idp.oc1..aaaaaaaa7ehdi53lr546fhugwewrbeltbgqvkocc27qslgbahsw5v55bvh4a/KUMAR.VARUN@ORACLE.COM",
             "dataConfig": [],
             "description": "",
